@@ -1,0 +1,52 @@
+###
+GET http://localhost:3000/api/products/
+###
+GET http://localhost:3000/api/products/64a6d36713bea5d226f8b2f7
+###
+GET http://localhost:3000/api/products/64a6d50eec3b58db7155ca8f
+Content-Type: application/json
+
+{
+    "name":"aspiradora con cable",
+    "description":"para aspirar casi todas las esquinas",
+    "price":150,
+    "available":true,
+    "department":"hogar",
+    "stock":30
+}
+###
+delete http://localhost:3000/api/products/64a6d50eec3b58db7155ca8f
+Content-Type: application/json
+
+{
+    "name":"aspiradora con cable",
+    "description":"para aspirar casi todas las esquinas",
+    "price":150,
+    "available":true,
+    "department":"hogar",
+    "stock":30
+}
+
+##################
+##API USER########
+##################
+
+###
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+    "username": "marcos",
+    "email":"marcos@gmail.com",
+    "password": 12345
+}
+
+###
+put http://localhost:3000/api/users/64a7e279b74b3542d37af04a/buy/64a7cd34de10b07375d9170a
+
+###
+GET http://localhost:3000/api/users/
+
+
+
+
