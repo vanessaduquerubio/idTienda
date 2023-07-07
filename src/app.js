@@ -7,6 +7,9 @@ const app = express()
 app.use(express.json())
 
 //creamos urls
+app.get('/', (req, res) => {
+    res.send('holi amiguis')
+})
 app.use('/api', require('./routes/api'))
 
 //3.exporto app para poder usarla 
